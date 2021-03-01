@@ -23,4 +23,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check MySQL Version
-        run: echo 'select version();' | mysql -h localhost --port 3307 -u root -proot
+        run: echo 'select version();' | mysql -h 127.0.0.1 --port 3307 -u root -proot
